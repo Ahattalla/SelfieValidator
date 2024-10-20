@@ -20,7 +20,7 @@ class SelfieValidatorManager {
     
     func start() throws {
         guard selfieValidatorManagerHelper != nil else { return assertionFailure("selfieValidatorManagerHelper is nil") }
-        try cameraManager.start()
+        try cameraManager.startSession()
     }
     
     func capturePhoto() throws {
@@ -31,7 +31,7 @@ class SelfieValidatorManager {
     }
 
     func approvePhoto() {
-        cameraManager.stop()
+        cameraManager.stopSession()
         
         guard let currentCapturedImage else { return }
         Configurations.delegate?.didCaptureSelfie(currentCapturedImage)

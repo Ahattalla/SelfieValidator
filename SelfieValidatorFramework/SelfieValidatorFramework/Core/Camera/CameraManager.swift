@@ -10,10 +10,24 @@ class CameraManager: NSObject {
     weak var cameraManagerHelper: CameraManagerHelper?
     weak var cameraManagerDelegate: CameraManagerDelegate?
     
-    func start() throws {
+    func startSession() throws {
+        setupCaptureSession()
+        try setupDeviceInput()
+        setupVideoPreviewLayer()
+        setupVideoOutput()
+        setupStillImageOutput()
+        
+        DispatchQueue.global().async {
+            self.captureSession?.startRunning()
+        }
+    }
+    
+    private func setupCaptureSession() {
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = .high
-        
+    }
+    
+    private func setupDeviceInput() throws {
         guard let frontCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else {
             throw CameraManagerError.frontCameraNotAvailable
         }
@@ -26,27 +40,29 @@ class CameraManager: NSObject {
         } catch {
             throw CameraManagerError.errorAddingCameraInput(error)
         }
-        
+    }
+    
+    private func setupVideoPreviewLayer() {
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
         videoPreviewLayer?.videoGravity = .resizeAspectFill
         if let previewLayer = videoPreviewLayer, let view = cameraManagerHelper?.videoPreviewLayerContainer {
             videoPreviewLayer?.frame = view.layer.bounds
             view.layer.addSublayer(previewLayer)
         }
-        
+    }
+    
+    private func setupVideoOutput() {
         videoOutput = AVCaptureVideoDataOutput()
         videoOutput?.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         if let videoOutput = videoOutput, captureSession?.canAddOutput(videoOutput) == true {
             captureSession?.addOutput(videoOutput)
         }
-        
+    }
+    
+    private func setupStillImageOutput() {
         stillImageOutput = AVCapturePhotoOutput()
         if let stillImageOutput = stillImageOutput, captureSession?.canAddOutput(stillImageOutput) == true {
             captureSession?.addOutput(stillImageOutput)
-        }
-        
-        DispatchQueue.global().async {
-            self.captureSession?.startRunning()
         }
     }
     
@@ -57,7 +73,7 @@ class CameraManager: NSObject {
         stillImageOutput.capturePhoto(with: settings, delegate: self)
     }
 
-    func stop() {
+    func stopSession() {
         captureSession?.stopRunning()
     }
 }
@@ -71,27 +87,12 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
 extension CameraManager: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {
-            print("Error capturing photo: \(error)")
+            debugPrint("Error capturing photo: \(error)")
             return
         }
         
         guard let imageData = photo.fileDataRepresentation(),
               let image = UIImage(data: imageData) else { return }
         cameraManagerDelegate?.cameraManager(self, didOutput: image)
-    }
-}
-
-
-enum CameraManagerError: Error, LocalizedError {
-    case frontCameraNotAvailable
-    case errorAddingCameraInput(Error)
-    
-    var errorDescription: String? {
-        switch self {
-        case .frontCameraNotAvailable:
-            return "Front camera is not available"
-        case .errorAddingCameraInput(let error):
-            return "Error adding camera input: \(error)"
-        }
     }
 }
