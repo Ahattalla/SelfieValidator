@@ -1,6 +1,17 @@
 import UIKit
 
 class CapturedImageViewController: UIViewController {
+    let selfieValidatorManager: SelfieValidatorManager
+    
+    init(selfieValidatorManager: SelfieValidatorManager) {
+        self.selfieValidatorManager = selfieValidatorManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var image: UIImage? {
         didSet {
             imageView.image = image
@@ -75,7 +86,7 @@ class CapturedImageViewController: UIViewController {
     }
 
     @objc private func approve() {
-
+        selfieValidatorManager.approvePhoto()
         dismiss(animated: true, completion: nil)
     }
 

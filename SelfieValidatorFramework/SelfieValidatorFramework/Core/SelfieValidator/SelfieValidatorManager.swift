@@ -9,6 +9,8 @@ class SelfieValidatorManager {
     weak var selfieValidatorManagerHelper: SelfieValidatorManagerHelper?
     weak var selfieValidatorManagerDelegate: SelfieValidatorManagerDelegate?
     
+    private var currentCapturedImage: UIImage?
+    
     init() {
         cameraManager.cameraManagerHelper = self
         cameraManager.cameraManagerDelegate = self
@@ -30,11 +32,15 @@ class SelfieValidatorManager {
 
     func approvePhoto() {
         cameraManager.stop()
+        
+        guard let currentCapturedImage else { return }
+        Configurations.delegate?.didCaptureSelfie(currentCapturedImage)
     }
 }
 
 extension SelfieValidatorManager: CameraManagerDelegate {
     func cameraManager(_ manager: CameraManager, didOutput image: UIImage) {
+        currentCapturedImage = image
         selfieValidatorManagerDelegate?.selfieValidatorManager(self, didCapturePhoto: image)
     }
     

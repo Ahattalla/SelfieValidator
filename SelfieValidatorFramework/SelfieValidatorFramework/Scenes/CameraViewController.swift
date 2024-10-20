@@ -57,7 +57,7 @@ class CameraViewController: UIViewController {
         }
     }
     
-    func setupCaptureButton() {
+    private func setupCaptureButton() {
         view.addSubview(captureButton)
     }
 
@@ -88,7 +88,7 @@ extension CameraViewController: SelfieValidatorManagerHelper {
 
 extension CameraViewController: SelfieValidatorManagerDelegate {
     func selfieValidatorManager(_ manager: SelfieValidatorManager, didCapturePhoto photo: UIImage) {
-        let vc = CapturedImageViewController()
+        let vc = CapturedImageViewController(selfieValidatorManager: selfieValidatorManager)
         vc.image = photo
         navigationController?.pushViewController(vc, animated: true)
     }
