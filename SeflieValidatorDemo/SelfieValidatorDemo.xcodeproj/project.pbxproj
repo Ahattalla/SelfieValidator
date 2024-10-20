@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F37A17FE2CC5B9F1007C898C /* SelfieValidatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F307CF2F2CC337AB00A98730 /* SelfieValidatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieValidatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37A17102CC5B606007C898C /* SelfieValidator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SelfieValidator.xcodeproj; sourceTree = "<group>"; };
+		F37A17622CC5B78E007C898C /* SelfieValidator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SelfieValidator.xcodeproj; sourceTree = "<group>"; };
+		F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SelfieValidatorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37E37012CC5B5B40085E883 /* SelfieValidator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SelfieValidator.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37A17FE2CC5B9F1007C898C /* SelfieValidatorFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F307CF312CC337AB00A98730 /* SelfieValidatorDemo */,
+				F37A17FC2CC5B9F1007C898C /* Frameworks */,
 				F307CF302CC337AB00A98730 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +64,35 @@
 			isa = PBXGroup;
 			children = (
 				F307CF2F2CC337AB00A98730 /* SelfieValidatorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37A171C2CC5B606007C898C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37A176E2CC5B78E007C898C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37A17FC2CC5B9F1007C898C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F37E37032CC5B5B40085E883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +149,20 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F307CF302CC337AB00A98730 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F37A171C2CC5B606007C898C /* Products */;
+					ProjectRef = F37A17102CC5B606007C898C /* SelfieValidator.xcodeproj */;
+				},
+				{
+					ProductGroup = F37A176E2CC5B78E007C898C /* Products */;
+					ProjectRef = F37A17622CC5B78E007C898C /* SelfieValidator.xcodeproj */;
+				},
+				{
+					ProductGroup = F37E37032CC5B5B40085E883 /* Products */;
+					ProjectRef = F37E37012CC5B5B40085E883 /* SelfieValidator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F307CF2E2CC337AB00A98730 /* SelfieValidatorDemo */,
@@ -153,6 +206,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +235,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
