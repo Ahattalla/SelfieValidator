@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F37A17FE2CC5B9F1007C898C /* SelfieValidatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */; };
+		F3986C6D2CC5CA33004BCDCD /* SelfieValidatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */; };
+		F3986C6E2CC5CA33004BCDCD /* SelfieValidatorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F37A17FD2CC5B9F1007C898C /* SelfieValidatorFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3986C6F2CC5CA33004BCDCD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3986C6E2CC5CA33004BCDCD /* SelfieValidatorFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F307CF2F2CC337AB00A98730 /* SelfieValidatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieValidatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37A17FE2CC5B9F1007C898C /* SelfieValidatorFramework.framework in Frameworks */,
+				F3986C6D2CC5CA33004BCDCD /* SelfieValidatorFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +122,7 @@
 				F307CF2B2CC337AB00A98730 /* Sources */,
 				F307CF2C2CC337AB00A98730 /* Frameworks */,
 				F307CF2D2CC337AB00A98730 /* Resources */,
+				F3986C6F2CC5CA33004BCDCD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
