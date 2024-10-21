@@ -5,8 +5,8 @@ protocol CameraManagerDelegate: AnyObject {
     /// Called when the camera manager outputs a new pixel buffer.
     /// - Parameters:
     ///   - manager: The `CameraManager` instance that is providing the pixel buffer.
-    ///   - pixelBuffer: The `CMSampleBuffer` containing the pixel data.
-    func cameraManager(_ manager: CameraManager, didOutput pixelBuffer: CMSampleBuffer)
+    ///   - sampleBuffer: The `CMSampleBuffer` containing the pixel data.
+    func cameraManager(_ manager: CameraManager, didOutput sampleBuffer: CMSampleBuffer)
 
     /// Called when the camera manager outputs a new image.
     /// - Parameters:

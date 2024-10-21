@@ -8,6 +8,7 @@ class CameraManager: NSObject {
     private var videoOutput: AVCaptureVideoDataOutput?
     private var stillImageOutput: AVCapturePhotoOutput?
 
+    // MARK: - Helper
     weak var cameraManagerHelper: CameraManagerHelper?
     weak var cameraManagerDelegate: CameraManagerDelegate?
     

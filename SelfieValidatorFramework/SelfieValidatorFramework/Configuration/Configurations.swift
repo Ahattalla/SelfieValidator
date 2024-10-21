@@ -5,7 +5,7 @@ public enum Configurations {
     /// A delegate that conforms to the `SelfieValidatorDelegate` protocol.
     /// This delegate is used to handle events and actions related to the SelfieValidator.
     /// The delegate can be set privately within the framework but can be accessed publicly.
-    public private(set) static var delegate: SelfieValidatorDelegate?
+    private(set) static var delegate: SelfieValidatorDelegate?
 }
 
 /// Sets up the `Configurations` with the provided delegate.
