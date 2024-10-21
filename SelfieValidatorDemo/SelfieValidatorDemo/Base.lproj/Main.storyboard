@@ -17,43 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-NN-j9E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-8z-NfB">
                                 <rect key="frame" x="16" y="752" width="361" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="qYk-ku-KWb"/>
+                                    <constraint firstAttribute="height" constant="50" id="cCn-BG-Rfa"/>
                                 </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start Onboarding">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Start onboarding"/>
                                 <connections>
-                                    <action selector="startOnboardingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmN-8P-HkB"/>
+                                    <action selector="startOnboardingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndv-em-d9J"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbe-S8-pw6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-8f-hFr">
                                 <rect key="frame" x="16" y="75" width="361" height="661"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbe-S8-pw6" secondAttribute="trailing" constant="16" id="GQW-0V-gpr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Etd-NN-j9E" secondAttribute="bottom" constant="16" id="Y8u-nm-CB2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Etd-NN-j9E" secondAttribute="trailing" constant="16" id="hcp-J5-A2Z"/>
-                            <constraint firstItem="lbe-S8-pw6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mlV-hu-rbH"/>
-                            <constraint firstItem="Etd-NN-j9E" firstAttribute="top" secondItem="lbe-S8-pw6" secondAttribute="bottom" constant="16" id="ua3-zL-NPN"/>
-                            <constraint firstItem="Etd-NN-j9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vKX-wO-NP2"/>
-                            <constraint firstItem="lbe-S8-pw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="x3c-Dw-WqN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LPf-8z-NfB" secondAttribute="bottom" constant="16" id="IJ6-RP-33N"/>
+                            <constraint firstItem="hsH-8f-hFr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="LaI-WU-eVi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPf-8z-NfB" secondAttribute="trailing" constant="16" id="UDU-Mh-wst"/>
+                            <constraint firstItem="LPf-8z-NfB" firstAttribute="top" secondItem="hsH-8f-hFr" secondAttribute="bottom" constant="16" id="UtS-vZ-Bum"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsH-8f-hFr" secondAttribute="trailing" constant="16" id="gjS-jq-iG5"/>
+                            <constraint firstItem="LPf-8z-NfB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gru-Mc-ggf"/>
+                            <constraint firstItem="hsH-8f-hFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p7v-hd-hhR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="capturedPhotoImageView" destination="lbe-S8-pw6" id="AoX-OQ-OKh"/>
+                        <outlet property="capturedPhotoImageView" destination="hsH-8f-hFr" id="qey-JF-gIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="102" y="4"/>
         </scene>
     </scenes>
     <resources>

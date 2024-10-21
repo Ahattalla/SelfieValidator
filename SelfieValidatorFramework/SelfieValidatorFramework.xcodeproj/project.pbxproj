@@ -3,36 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F35FE05A2CC6B1EC00667F52 /* SelfieValidatorFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F35FE0592CC6B1EC00667F52 /* SelfieValidatorFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35FE0752CC6B27D00667F52 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0602CC6B27D00667F52 /* CameraViewController.swift */; };
+		F35FE0762CC6B27D00667F52 /* CapturedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0612CC6B27D00667F52 /* CapturedImageViewController.swift */; };
+		F35FE0772CC6B27D00667F52 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0632CC6B27D00667F52 /* CameraManager.swift */; };
+		F35FE0782CC6B27D00667F52 /* CameraManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0642CC6B27D00667F52 /* CameraManagerDelegate.swift */; };
+		F35FE0792CC6B27D00667F52 /* CameraManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0652CC6B27D00667F52 /* CameraManagerError.swift */; };
+		F35FE07A2CC6B27D00667F52 /* CameraManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0662CC6B27D00667F52 /* CameraManagerHelper.swift */; };
+		F35FE07B2CC6B27D00667F52 /* FaceDetectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0682CC6B27D00667F52 /* FaceDetectionError.swift */; };
+		F35FE07C2CC6B27D00667F52 /* FaceDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0692CC6B27D00667F52 /* FaceDetectionManager.swift */; };
+		F35FE07D2CC6B27D00667F52 /* FaceDetectionManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE06A2CC6B27D00667F52 /* FaceDetectionManagerHelper.swift */; };
+		F35FE07E2CC6B27D00667F52 /* SelfieValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE06C2CC6B27D00667F52 /* SelfieValidatorError.swift */; };
+		F35FE07F2CC6B27D00667F52 /* SelfieValidatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE06D2CC6B27D00667F52 /* SelfieValidatorManager.swift */; };
+		F35FE0802CC6B27D00667F52 /* SelfieValidatorManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE06E2CC6B27D00667F52 /* SelfieValidatorManagerDelegate.swift */; };
+		F35FE0812CC6B27D00667F52 /* SelfieValidatorManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE06F2CC6B27D00667F52 /* SelfieValidatorManagerHelper.swift */; };
+		F35FE0822CC6B27D00667F52 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0722CC6B27D00667F52 /* Configurations.swift */; };
+		F35FE0832CC6B27D00667F52 /* SelfieValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35FE0732CC6B27D00667F52 /* SelfieValidatorDelegate.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		F37A17F12CC5B9D6007C898C /* SelfieValidatorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SelfieValidatorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35FE0562CC6B1EC00667F52 /* SelfieValidatorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SelfieValidatorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35FE0592CC6B1EC00667F52 /* SelfieValidatorFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfieValidatorFramework.h; sourceTree = "<group>"; };
+		F35FE0602CC6B27D00667F52 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		F35FE0612CC6B27D00667F52 /* CapturedImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedImageViewController.swift; sourceTree = "<group>"; };
+		F35FE0632CC6B27D00667F52 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		F35FE0642CC6B27D00667F52 /* CameraManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManagerDelegate.swift; sourceTree = "<group>"; };
+		F35FE0652CC6B27D00667F52 /* CameraManagerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManagerError.swift; sourceTree = "<group>"; };
+		F35FE0662CC6B27D00667F52 /* CameraManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManagerHelper.swift; sourceTree = "<group>"; };
+		F35FE0682CC6B27D00667F52 /* FaceDetectionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectionError.swift; sourceTree = "<group>"; };
+		F35FE0692CC6B27D00667F52 /* FaceDetectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectionManager.swift; sourceTree = "<group>"; };
+		F35FE06A2CC6B27D00667F52 /* FaceDetectionManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectionManagerHelper.swift; sourceTree = "<group>"; };
+		F35FE06C2CC6B27D00667F52 /* SelfieValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieValidatorError.swift; sourceTree = "<group>"; };
+		F35FE06D2CC6B27D00667F52 /* SelfieValidatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieValidatorManager.swift; sourceTree = "<group>"; };
+		F35FE06E2CC6B27D00667F52 /* SelfieValidatorManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieValidatorManagerDelegate.swift; sourceTree = "<group>"; };
+		F35FE06F2CC6B27D00667F52 /* SelfieValidatorManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieValidatorManagerHelper.swift; sourceTree = "<group>"; };
+		F35FE0722CC6B27D00667F52 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		F35FE0732CC6B27D00667F52 /* SelfieValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieValidatorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F37A17F62CC5B9D6007C898C /* Exceptions for "SelfieValidatorFramework" folder in "SelfieValidatorFramework" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				SelfieValidatorFramework.h,
-			);
-			target = F37A17F02CC5B9D6007C898C /* SelfieValidatorFramework */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F37A17F32CC5B9D6007C898C /* SelfieValidatorFramework */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F37A17F62CC5B9D6007C898C /* Exceptions for "SelfieValidatorFramework" folder in "SelfieValidatorFramework" target */,
-			);
-			path = SelfieValidatorFramework;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		F37A17EE2CC5B9D6007C898C /* Frameworks */ = {
+		F35FE0532CC6B1EC00667F52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,94 +56,159 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F37A17E72CC5B9D6007C898C = {
+		F35FE04C2CC6B1EC00667F52 = {
 			isa = PBXGroup;
 			children = (
-				F37A17F32CC5B9D6007C898C /* SelfieValidatorFramework */,
-				F37A17F22CC5B9D6007C898C /* Products */,
+				F35FE0582CC6B1EC00667F52 /* SelfieValidatorFramework */,
+				F35FE0572CC6B1EC00667F52 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F37A17F22CC5B9D6007C898C /* Products */ = {
+		F35FE0572CC6B1EC00667F52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F37A17F12CC5B9D6007C898C /* SelfieValidatorFramework.framework */,
+				F35FE0562CC6B1EC00667F52 /* SelfieValidatorFramework.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F35FE0582CC6B1EC00667F52 /* SelfieValidatorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0742CC6B27D00667F52 /* Configuration */,
+				F35FE0712CC6B27D00667F52 /* Core */,
+				F35FE0622CC6B27D00667F52 /* Scenes */,
+				F35FE0592CC6B1EC00667F52 /* SelfieValidatorFramework.h */,
+			);
+			path = SelfieValidatorFramework;
+			sourceTree = "<group>";
+		};
+		F35FE0622CC6B27D00667F52 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0602CC6B27D00667F52 /* CameraViewController.swift */,
+				F35FE0612CC6B27D00667F52 /* CapturedImageViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F35FE0672CC6B27D00667F52 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0632CC6B27D00667F52 /* CameraManager.swift */,
+				F35FE0642CC6B27D00667F52 /* CameraManagerDelegate.swift */,
+				F35FE0652CC6B27D00667F52 /* CameraManagerError.swift */,
+				F35FE0662CC6B27D00667F52 /* CameraManagerHelper.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		F35FE06B2CC6B27D00667F52 /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0682CC6B27D00667F52 /* FaceDetectionError.swift */,
+				F35FE0692CC6B27D00667F52 /* FaceDetectionManager.swift */,
+				F35FE06A2CC6B27D00667F52 /* FaceDetectionManagerHelper.swift */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		F35FE0702CC6B27D00667F52 /* SelfieValidator */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE06C2CC6B27D00667F52 /* SelfieValidatorError.swift */,
+				F35FE06D2CC6B27D00667F52 /* SelfieValidatorManager.swift */,
+				F35FE06E2CC6B27D00667F52 /* SelfieValidatorManagerDelegate.swift */,
+				F35FE06F2CC6B27D00667F52 /* SelfieValidatorManagerHelper.swift */,
+			);
+			path = SelfieValidator;
+			sourceTree = "<group>";
+		};
+		F35FE0712CC6B27D00667F52 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0672CC6B27D00667F52 /* Camera */,
+				F35FE06B2CC6B27D00667F52 /* FaceDetection */,
+				F35FE0702CC6B27D00667F52 /* SelfieValidator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F35FE0742CC6B27D00667F52 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F35FE0722CC6B27D00667F52 /* Configurations.swift */,
+				F35FE0732CC6B27D00667F52 /* SelfieValidatorDelegate.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F37A17EC2CC5B9D6007C898C /* Headers */ = {
+		F35FE0512CC6B1EC00667F52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35FE05A2CC6B1EC00667F52 /* SelfieValidatorFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F37A17F02CC5B9D6007C898C /* SelfieValidatorFramework */ = {
+		F35FE0552CC6B1EC00667F52 /* SelfieValidatorFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F37A17F72CC5B9D6007C898C /* Build configuration list for PBXNativeTarget "SelfieValidatorFramework" */;
+			buildConfigurationList = F35FE05D2CC6B1EC00667F52 /* Build configuration list for PBXNativeTarget "SelfieValidatorFramework" */;
 			buildPhases = (
-				F37A17EC2CC5B9D6007C898C /* Headers */,
-				F37A17ED2CC5B9D6007C898C /* Sources */,
-				F37A17EE2CC5B9D6007C898C /* Frameworks */,
-				F37A17EF2CC5B9D6007C898C /* Resources */,
+				F35FE0512CC6B1EC00667F52 /* Headers */,
+				F35FE0522CC6B1EC00667F52 /* Sources */,
+				F35FE0532CC6B1EC00667F52 /* Frameworks */,
+				F35FE0542CC6B1EC00667F52 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F37A17F32CC5B9D6007C898C /* SelfieValidatorFramework */,
-			);
 			name = SelfieValidatorFramework;
-			packageProductDependencies = (
-			);
 			productName = SelfieValidatorFramework;
-			productReference = F37A17F12CC5B9D6007C898C /* SelfieValidatorFramework.framework */;
+			productReference = F35FE0562CC6B1EC00667F52 /* SelfieValidatorFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F37A17E82CC5B9D6007C898C /* Project object */ = {
+		F35FE04D2CC6B1EC00667F52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					F37A17F02CC5B9D6007C898C = {
-						CreatedOnToolsVersion = 16.0;
-						LastSwiftMigration = 1600;
+					F35FE0552CC6B1EC00667F52 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = F37A17EB2CC5B9D6007C898C /* Build configuration list for PBXProject "SelfieValidatorFramework" */;
+			buildConfigurationList = F35FE0502CC6B1EC00667F52 /* Build configuration list for PBXProject "SelfieValidatorFramework" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = F37A17E72CC5B9D6007C898C;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = F37A17F22CC5B9D6007C898C /* Products */;
+			mainGroup = F35FE04C2CC6B1EC00667F52;
+			productRefGroup = F35FE0572CC6B1EC00667F52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F37A17F02CC5B9D6007C898C /* SelfieValidatorFramework */,
+				F35FE0552CC6B1EC00667F52 /* SelfieValidatorFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F37A17EF2CC5B9D6007C898C /* Resources */ = {
+		F35FE0542CC6B1EC00667F52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,88 +218,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F37A17ED2CC5B9D6007C898C /* Sources */ = {
+		F35FE0522CC6B1EC00667F52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35FE0822CC6B27D00667F52 /* Configurations.swift in Sources */,
+				F35FE0762CC6B27D00667F52 /* CapturedImageViewController.swift in Sources */,
+				F35FE0782CC6B27D00667F52 /* CameraManagerDelegate.swift in Sources */,
+				F35FE0812CC6B27D00667F52 /* SelfieValidatorManagerHelper.swift in Sources */,
+				F35FE07A2CC6B27D00667F52 /* CameraManagerHelper.swift in Sources */,
+				F35FE07E2CC6B27D00667F52 /* SelfieValidatorError.swift in Sources */,
+				F35FE07D2CC6B27D00667F52 /* FaceDetectionManagerHelper.swift in Sources */,
+				F35FE07F2CC6B27D00667F52 /* SelfieValidatorManager.swift in Sources */,
+				F35FE0772CC6B27D00667F52 /* CameraManager.swift in Sources */,
+				F35FE07B2CC6B27D00667F52 /* FaceDetectionError.swift in Sources */,
+				F35FE0752CC6B27D00667F52 /* CameraViewController.swift in Sources */,
+				F35FE07C2CC6B27D00667F52 /* FaceDetectionManager.swift in Sources */,
+				F35FE0792CC6B27D00667F52 /* CameraManagerError.swift in Sources */,
+				F35FE0832CC6B27D00667F52 /* SelfieValidatorDelegate.swift in Sources */,
+				F35FE0802CC6B27D00667F52 /* SelfieValidatorManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F37A17F82CC5B9D6007C898C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 283YJN6A58;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAttalla.SelfieValidatorFramework;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F37A17F92CC5B9D6007C898C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 283YJN6A58;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAttalla.SelfieValidatorFramework;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F37A17FA2CC5B9D6007C898C /* Debug */ = {
+		F35FE05B2CC6B1EC00667F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -286,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		F37A17FB2CC5B9D6007C898C /* Release */ = {
+		F35FE05C2CC6B1EC00667F52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -345,28 +368,96 @@
 			};
 			name = Release;
 		};
+		F35FE05E2CC6B1EC00667F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 283YJN6A58;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAttalla.SelfieValidatorFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F35FE05F2CC6B1EC00667F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 283YJN6A58;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAttalla.SelfieValidatorFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F37A17EB2CC5B9D6007C898C /* Build configuration list for PBXProject "SelfieValidatorFramework" */ = {
+		F35FE0502CC6B1EC00667F52 /* Build configuration list for PBXProject "SelfieValidatorFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F37A17FA2CC5B9D6007C898C /* Debug */,
-				F37A17FB2CC5B9D6007C898C /* Release */,
+				F35FE05B2CC6B1EC00667F52 /* Debug */,
+				F35FE05C2CC6B1EC00667F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F37A17F72CC5B9D6007C898C /* Build configuration list for PBXNativeTarget "SelfieValidatorFramework" */ = {
+		F35FE05D2CC6B1EC00667F52 /* Build configuration list for PBXNativeTarget "SelfieValidatorFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F37A17F82CC5B9D6007C898C /* Debug */,
-				F37A17F92CC5B9D6007C898C /* Release */,
+				F35FE05E2CC6B1EC00667F52 /* Debug */,
+				F35FE05F2CC6B1EC00667F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F37A17E82CC5B9D6007C898C /* Project object */;
+	rootObject = F35FE04D2CC6B1EC00667F52 /* Project object */;
 }

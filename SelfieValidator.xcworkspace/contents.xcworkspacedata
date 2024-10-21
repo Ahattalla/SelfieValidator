@@ -5,6 +5,6 @@
       location = "group:SelfieValidatorFramework/SelfieValidatorFramework.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SeflieValidatorDemo/SelfieValidatorDemo.xcodeproj">
+      location = "group:SelfieValidatorDemo/SelfieValidatorDemo.xcodeproj">
    </FileRef>
 </Workspace>

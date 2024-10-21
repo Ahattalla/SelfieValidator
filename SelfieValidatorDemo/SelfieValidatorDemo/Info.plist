@@ -21,7 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>We need to access camera to take a selfie photo for validation</string>
 </dict>
 </plist>
