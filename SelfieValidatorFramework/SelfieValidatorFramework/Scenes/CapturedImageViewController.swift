@@ -1,23 +1,16 @@
 import UIKit
 
 class CapturedImageViewController: UIViewController {
+    
+    // MARK: - Properties
     let selfieValidatorManager: SelfieValidatorManager
-    
-    init(selfieValidatorManager: SelfieValidatorManager) {
-        self.selfieValidatorManager = selfieValidatorManager
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+        
     var image: UIImage? {
         didSet {
             imageView.image = image
         }
     }
-    
+
     private lazy var approveButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Approve", for: .normal)
@@ -46,12 +39,24 @@ class CapturedImageViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+
+    // MARK: - Initialization
+    init(selfieValidatorManager: SelfieValidatorManager) {
+        self.selfieValidatorManager = selfieValidatorManager
+        super.init(nibName: nil, bundle: nil)
+    }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
+    // MARK: - Methods
     private func setupUI() {
         view.backgroundColor = .white
         setupButtons()

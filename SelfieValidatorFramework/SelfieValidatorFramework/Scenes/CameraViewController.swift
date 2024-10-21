@@ -1,6 +1,8 @@
 import UIKit
 
 class CameraViewController: UIViewController {
+
+    // MARK: - Properties
     private let selfieValidatorManager: SelfieValidatorManager = .init()
     
     private lazy var captureButton: UIButton = {
@@ -25,6 +27,7 @@ class CameraViewController: UIViewController {
         return button
     }()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSelfieValidatorManager()
@@ -33,6 +36,7 @@ class CameraViewController: UIViewController {
         setupCaptureButton()
     }
 
+    // MARK: - Methods
     private func setupUI() {
         view.backgroundColor = .white
         view.addSubview(closeButton)
@@ -80,12 +84,14 @@ class CameraViewController: UIViewController {
     }
 }
 
+// MARK: - SelfieValidatorManagerHelper
 extension CameraViewController: SelfieValidatorManagerHelper {
     var selfieValidatorViewContainer: UIView {
         self.view
     }
 }
 
+// MARK: - SelfieValidatorManagerDelegate
 extension CameraViewController: SelfieValidatorManagerDelegate {
     func selfieValidatorManager(_ manager: SelfieValidatorManager, didCapturePhoto photo: UIImage) {
         let vc = CapturedImageViewController(selfieValidatorManager: selfieValidatorManager)
